@@ -18,4 +18,4 @@ where date(ts_event) = '2010-06-30';
     FROM raw_data.ohlcv_1m
     WHERE DATE(ts_event) = '2010-06-30'
     GROUP BY trade_date, raw_symbol
-    ;
+    

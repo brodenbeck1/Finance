@@ -1,0 +1,9 @@
+# ZST to CSV Converter Dependencies
+zstandard>=0.22.0
+pandas>=2.0.0
+
+# dbt and Database Dependencies
+dbt-core>=1.7.0
+dbt-postgres>=1.7.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0

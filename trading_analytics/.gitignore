@@ -1,0 +1,6 @@
+target/
+dbt_packages/
+logs/
+raw/
+trading_analytics/seeds/glbx-mdp3-20100606-20250603.ohlcv-1m.csv
+trading_analytics/seeds/symbology.csv

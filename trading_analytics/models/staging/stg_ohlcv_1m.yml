@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_ohlcv_1m
+    description: Staged 1-minute OHLCV data for NQ1! continuous contract
+    columns:
+      - name: event_timestamp
+        description: Parsed event timestamp
+        tests:
+          - not_null
+      - name: record_type
+        description: Type of record (e.g., trade, quote)
+      - name: publisher_id
+        description: Publisher identifier
+      - name: instrument_id
+        description: Unique instrument identifier
+      - name: open_price
+        description: Opening price as decimal
+        tests:
+          - not_null
+      - name: high_price
+        description: High price as decimal
+        tests:
+          - not_null
+      - name: low_price
+        description: Low price as decimal
+        tests:
+          - not_null
+      - name: close_price
+        description: Closing price as decimal
+        tests:
+          - not_null
+      - name: volume
+        description: Trading volume as bigint
+        tests:
+          - not_null
+      - name: raw_symbol
+        description: Raw trading symbol
+      - name: trade_date
+        description: Extracted trade date
+        tests:
+          - not_null
+      - name: hour_of_day
+        description: Extracted hour of the day
